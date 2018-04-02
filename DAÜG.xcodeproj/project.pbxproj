@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B787352E206AE0B2002188BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B787352D206AE0B2002188BE /* AppDelegate.swift */; };
-		B7873530206AE0B2002188BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B787352F206AE0B2002188BE /* ViewController.swift */; };
 		B7873533206AE0B3002188BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7873531206AE0B3002188BE /* Main.storyboard */; };
 		B7873535206AE0B3002188BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7873534206AE0B3002188BE /* Assets.xcassets */; };
 		B7873538206AE0B3002188BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7873536206AE0B3002188BE /* LaunchScreen.storyboard */; };
+		B7873540206AE204002188BE /* DogBreedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B787353F206AE204002188BE /* DogBreedScreen.swift */; };
+		B7873542206AE7C4002188BE /* BreedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7873541206AE7C4002188BE /* BreedCell.swift */; };
+		B7873544206AE8B3002188BE /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7873543206AE8B3002188BE /* Breed.swift */; };
+		B7873546206B6CBF002188BE /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7873545206B6CBF002188BE /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B787352A206AE0B2002188BE /* DAÜG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DAÜG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B787352D206AE0B2002188BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B787352F206AE0B2002188BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B7873532206AE0B3002188BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7873534206AE0B3002188BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7873537206AE0B3002188BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7873539206AE0B3002188BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B787353F206AE204002188BE /* DogBreedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedScreen.swift; sourceTree = "<group>"; };
+		B7873541206AE7C4002188BE /* BreedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCell.swift; sourceTree = "<group>"; };
+		B7873543206AE8B3002188BE /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		B7873545206B6CBF002188BE /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				B787352D206AE0B2002188BE /* AppDelegate.swift */,
-				B787352F206AE0B2002188BE /* ViewController.swift */,
+				B787353F206AE204002188BE /* DogBreedScreen.swift */,
 				B7873531206AE0B3002188BE /* Main.storyboard */,
+				B7873541206AE7C4002188BE /* BreedCell.swift */,
+				B7873543206AE8B3002188BE /* Breed.swift */,
+				B7873545206B6CBF002188BE /* Image.swift */,
 				B7873534206AE0B3002188BE /* Assets.xcassets */,
 				B7873536206AE0B3002188BE /* LaunchScreen.storyboard */,
 				B7873539206AE0B3002188BE /* Info.plist */,
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7873530206AE0B2002188BE /* ViewController.swift in Sources */,
+				B7873544206AE8B3002188BE /* Breed.swift in Sources */,
+				B7873542206AE7C4002188BE /* BreedCell.swift in Sources */,
 				B787352E206AE0B2002188BE /* AppDelegate.swift in Sources */,
+				B7873540206AE204002188BE /* DogBreedScreen.swift in Sources */,
+				B7873546206B6CBF002188BE /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

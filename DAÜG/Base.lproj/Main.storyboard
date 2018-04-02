@@ -1,24 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6gc-VE-u4c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Dog Breed Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DogBreedScreen" customModule="DAU_G" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJc-tX-bIn" userLabel="Header">
+                                <rect key="frame" x="0.0" y="64" width="375" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fto-WF-fuZ" userLabel="Large Title Label">
+                                        <rect key="frame" x="75" y="14" width="179.5" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcr-47-vXs">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                                <color key="textColor" red="0.84705882349999995" green="0.2784313725" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ÜG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-2D-n5g">
+                                                <rect key="frame" x="89" y="0.0" width="90.5" height="82"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1i-gP-h62" userLabel="Small Title Label">
+                                        <rect key="frame" x="143" y="8" width="90" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaA-dm-3zF">
+                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="41"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                                <color key="textColor" red="0.84705882349999995" green="0.2784313725" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ÜG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnH-tK-4Mq">
+                                                <rect key="frame" x="44.5" y="0.0" width="45.5" height="41"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dogo Logo" translatesAutoresizingMaskIntoConstraints="NO" id="KdX-q5-hd7" userLabel="Logo Image">
+                                        <rect key="frame" x="277" y="27.5" width="55" height="55"/>
+                                        <color key="tintColor" red="0.9941860465116279" green="0.98837209302325579" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="8dj-sQ-mA9"/>
+                                            <constraint firstAttribute="height" constant="55" id="tH9-SH-KjW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96150738554074688" green="0.95588453533290618" blue="0.96713023574858747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Q1i-gP-h62" firstAttribute="top" secondItem="DJc-tX-bIn" secondAttribute="top" constant="8" id="1KB-ge-w92"/>
+                                    <constraint firstAttribute="height" constant="110" id="211-9h-Xau"/>
+                                    <constraint firstItem="Q1i-gP-h62" firstAttribute="centerX" secondItem="DJc-tX-bIn" secondAttribute="centerX" id="Dj8-Yv-nFJ"/>
+                                    <constraint firstItem="Fto-WF-fuZ" firstAttribute="centerY" secondItem="DJc-tX-bIn" secondAttribute="centerY" id="Lxf-7H-hlF"/>
+                                    <constraint firstItem="KdX-q5-hd7" firstAttribute="centerY" secondItem="DJc-tX-bIn" secondAttribute="centerY" id="XOl-MK-f6t"/>
+                                    <constraint firstItem="KdX-q5-hd7" firstAttribute="leading" secondItem="Fto-WF-fuZ" secondAttribute="trailing" constant="22.5" id="pB9-TC-UjR"/>
+                                    <constraint firstItem="Fto-WF-fuZ" firstAttribute="leading" secondItem="DJc-tX-bIn" secondAttribute="leading" constant="75" id="pT9-cg-bcK"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jcr-gv-6F4">
+                                <rect key="frame" x="0.0" y="174" width="375" height="493"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BreedCell" id="any-rY-aaW" customClass="BreedCell" customModule="DAU_G" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="any-rY-aaW" id="dm7-25-NXH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t8B-2D-hd4">
+                                                    <rect key="frame" x="12" y="-5" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="epc-M8-Cnx"/>
+                                                        <constraint firstAttribute="width" constant="100" id="s0Y-Q3-aWW"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="IVI-9c-6wi">
+                                                    <rect key="frame" x="135" y="20.5" width="228" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Cex-h7-u2s"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="IVI-9c-6wi" secondAttribute="trailing" constant="12" id="A9X-bt-brD"/>
+                                                <constraint firstItem="t8B-2D-hd4" firstAttribute="leading" secondItem="dm7-25-NXH" secondAttribute="leading" constant="12" id="ia5-9K-DBk"/>
+                                                <constraint firstItem="IVI-9c-6wi" firstAttribute="centerY" secondItem="dm7-25-NXH" secondAttribute="centerY" id="jZf-PC-C1h"/>
+                                                <constraint firstItem="IVI-9c-6wi" firstAttribute="leading" secondItem="t8B-2D-hd4" secondAttribute="trailing" constant="23" id="k11-Vy-X92"/>
+                                                <constraint firstItem="t8B-2D-hd4" firstAttribute="centerY" secondItem="dm7-25-NXH" secondAttribute="centerY" id="zsE-ET-P1Y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="breedImageView" destination="t8B-2D-hd4" id="TzK-Ly-w7T"/>
+                                            <outlet property="breedTitleLabel" destination="IVI-9c-6wi" id="Y9Y-oj-oFl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jcr-gv-6F4" secondAttribute="trailing" id="B5A-SW-uLh"/>
+                            <constraint firstItem="Jcr-gv-6F4" firstAttribute="top" secondItem="DJc-tX-bIn" secondAttribute="bottom" id="Dr2-UW-uhp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DJc-tX-bIn" secondAttribute="trailing" id="KIy-le-lRF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jcr-gv-6F4" secondAttribute="bottom" id="Rik-TL-Uy0"/>
+                            <constraint firstItem="Jcr-gv-6F4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZzI-ZS-LnC"/>
+                            <constraint firstItem="DJc-tX-bIn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gew-5q-I4Q"/>
+                            <constraint firstItem="DJc-tX-bIn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jKs-6m-tCK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="S9p-bL-w6M"/>
+                    <connections>
+                        <outlet property="headerHeightConstraint" destination="211-9h-Xau" id="V5q-BU-77u"/>
+                        <outlet property="largeTitleLabel" destination="Fto-WF-fuZ" id="DXz-Ev-FR4"/>
+                        <outlet property="logoImageView" destination="KdX-q5-hd7" id="m7n-mP-v5K"/>
+                        <outlet property="smallTitleLabel" destination="Q1i-gP-h62" id="USt-iN-sQW"/>
+                        <outlet property="tableView" destination="Jcr-gv-6F4" id="5Of-wD-cCc"/>
+                        <outlet property="titleTopConstraint" destination="1KB-ge-w92" id="514-9Z-b0f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1039.2" y="490.70464767616198"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="si3-Ga-say">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6gc-VE-u4c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f84-X6-kVf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EM4-rP-O4v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hi-KM-e4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132.80000000000001" y="491.15442278860576"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dogo Logo" width="1000" height="1000"/>
+    </resources>
 </document>
